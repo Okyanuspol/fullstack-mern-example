@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.use("/api/auth", authRouter);
-app.use("/api", postsRouter);
+app.use("/app/auth", authRouter);
+app.use("/app", postsRouter);
 
 app.listen("3005", () => console.log("server started on port 3005"));
